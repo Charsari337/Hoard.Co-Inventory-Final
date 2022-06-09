@@ -40,17 +40,18 @@
             this.populationTrackerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.populationTrackerButton.Location = new System.Drawing.Point(3, 3);
             this.populationTrackerButton.Name = "populationTrackerButton";
-            this.populationTrackerButton.Size = new System.Drawing.Size(500, 325);
+            this.populationTrackerButton.Size = new System.Drawing.Size(488, 313);
             this.populationTrackerButton.TabIndex = 0;
             this.populationTrackerButton.Text = "populationTrackerButton";
             this.populationTrackerButton.UseVisualStyleBackColor = true;
+            this.populationTrackerButton.Click += new System.EventHandler(this.populationTrackerButton_Click);
             // 
             // assetsButton
             // 
             this.assetsButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.assetsButton.Location = new System.Drawing.Point(3, 322);
+            this.assetsButton.Location = new System.Drawing.Point(3, 332);
             this.assetsButton.Name = "assetsButton";
-            this.assetsButton.Size = new System.Drawing.Size(500, 325);
+            this.assetsButton.Size = new System.Drawing.Size(488, 315);
             this.assetsButton.TabIndex = 1;
             this.assetsButton.Text = "assetsButton";
             this.assetsButton.UseVisualStyleBackColor = true;
@@ -58,9 +59,9 @@
             // energyStorageButton
             // 
             this.energyStorageButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.energyStorageButton.Location = new System.Drawing.Point(497, 3);
+            this.energyStorageButton.Location = new System.Drawing.Point(509, 3);
             this.energyStorageButton.Name = "energyStorageButton";
-            this.energyStorageButton.Size = new System.Drawing.Size(500, 325);
+            this.energyStorageButton.Size = new System.Drawing.Size(488, 313);
             this.energyStorageButton.TabIndex = 2;
             this.energyStorageButton.Text = "energyStorageButton";
             this.energyStorageButton.UseVisualStyleBackColor = true;
@@ -68,9 +69,9 @@
             // helpButton
             // 
             this.helpButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpButton.Location = new System.Drawing.Point(497, 322);
+            this.helpButton.Location = new System.Drawing.Point(509, 332);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(500, 325);
+            this.helpButton.Size = new System.Drawing.Size(488, 315);
             this.helpButton.TabIndex = 3;
             this.helpButton.Text = "helpButton";
             this.helpButton.UseVisualStyleBackColor = true;
