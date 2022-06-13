@@ -15,6 +15,19 @@ namespace Hoard.Co_Inventory_Final
         public VariantsSubScreen()
         {
             InitializeComponent();
+
+            variantTitleLabel.Text = "Variants Page: 1";
+
+            variantsListLabel.Text = "";
+
+            previousButton.Text = "Previous";
+            nextButton.Text = "Next";
+
+            variantTypeTextbox.Text = "";
+            variantTypeTextButton.Text = "Select Type";
+
+            typeAmountTextbox.Text = "";
+            typeAmountTextButton.Text = ""
         }
     }
 }
