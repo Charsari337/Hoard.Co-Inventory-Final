@@ -85,6 +85,7 @@
             this.returnButton.TabIndex = 4;
             this.returnButton.Text = "returnButton";
             this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // generalInventoryScreen
             // 

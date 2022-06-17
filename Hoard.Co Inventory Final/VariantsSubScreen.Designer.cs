@@ -30,15 +30,12 @@
         {
             this.variantsListLabel = new System.Windows.Forms.Label();
             this.variantTitleLabel = new System.Windows.Forms.Label();
-            this.previousButton = new System.Windows.Forms.Button();
-            this.nextButton = new System.Windows.Forms.Button();
             this.variantTypeTextbox = new System.Windows.Forms.TextBox();
-            this.typeAmountTextbox = new System.Windows.Forms.TextBox();
-            this.variantTypeTextButton = new System.Windows.Forms.Button();
-            this.typeAmountTextButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.returnButton = new System.Windows.Forms.Button();
+            this.removeButton = new System.Windows.Forms.Button();
+            this.variantAmountTextbox = new System.Windows.Forms.TextBox();
+            this.listButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // variantsListLabel
@@ -62,106 +59,78 @@
             this.variantTitleLabel.Text = "variantTitleLabel";
             this.variantTitleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // previousButton
-            // 
-            this.previousButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.previousButton.Location = new System.Drawing.Point(3, 210);
-            this.previousButton.Name = "previousButton";
-            this.previousButton.Size = new System.Drawing.Size(75, 119);
-            this.previousButton.TabIndex = 2;
-            this.previousButton.Text = "previousButton";
-            this.previousButton.UseVisualStyleBackColor = true;
-            // 
-            // nextButton
-            // 
-            this.nextButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextButton.Location = new System.Drawing.Point(916, 210);
-            this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(75, 119);
-            this.nextButton.TabIndex = 3;
-            this.nextButton.Text = "nextButton";
-            this.nextButton.UseVisualStyleBackColor = true;
-            // 
             // variantTypeTextbox
             // 
             this.variantTypeTextbox.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.variantTypeTextbox.Location = new System.Drawing.Point(107, 538);
+            this.variantTypeTextbox.Location = new System.Drawing.Point(197, 538);
             this.variantTypeTextbox.Name = "variantTypeTextbox";
-            this.variantTypeTextbox.Size = new System.Drawing.Size(335, 31);
+            this.variantTypeTextbox.Size = new System.Drawing.Size(279, 31);
             this.variantTypeTextbox.TabIndex = 4;
             this.variantTypeTextbox.Text = "variantTypeTextbox";
             // 
-            // typeAmountTextbox
+            // addButton
             // 
-            this.typeAmountTextbox.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typeAmountTextbox.Location = new System.Drawing.Point(497, 538);
-            this.typeAmountTextbox.Name = "typeAmountTextbox";
-            this.typeAmountTextbox.Size = new System.Drawing.Size(173, 31);
-            this.typeAmountTextbox.TabIndex = 5;
-            this.typeAmountTextbox.Text = "typeAmountTextbox";
+            this.addButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(348, 575);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(128, 72);
+            this.addButton.TabIndex = 6;
+            this.addButton.Text = "addButton";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
-            // variantTypeTextButton
+            // returnButton
             // 
-            this.variantTypeTextButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.variantTypeTextButton.Location = new System.Drawing.Point(202, 575);
-            this.variantTypeTextButton.Name = "variantTypeTextButton";
-            this.variantTypeTextButton.Size = new System.Drawing.Size(128, 72);
-            this.variantTypeTextButton.TabIndex = 6;
-            this.variantTypeTextButton.Text = "variantTypeTextButton";
-            this.variantTypeTextButton.UseVisualStyleBackColor = true;
+            this.returnButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.returnButton.Location = new System.Drawing.Point(905, 601);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(92, 46);
+            this.returnButton.TabIndex = 10;
+            this.returnButton.Text = "returnButton";
+            this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
-            // typeAmountTextButton
+            // removeButton
             // 
-            this.typeAmountTextButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typeAmountTextButton.Location = new System.Drawing.Point(520, 575);
-            this.typeAmountTextButton.Name = "typeAmountTextButton";
-            this.typeAmountTextButton.Size = new System.Drawing.Size(128, 72);
-            this.typeAmountTextButton.TabIndex = 7;
-            this.typeAmountTextButton.Text = "typeAmountTextButton";
-            this.typeAmountTextButton.UseVisualStyleBackColor = true;
+            this.removeButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeButton.Location = new System.Drawing.Point(525, 575);
+            this.removeButton.Name = "removeButton";
+            this.removeButton.Size = new System.Drawing.Size(128, 72);
+            this.removeButton.TabIndex = 11;
+            this.removeButton.Text = "removeButton";
+            this.removeButton.UseVisualStyleBackColor = true;
+            this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
-            // button1
+            // variantAmountTextbox
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(727, 575);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 72);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.variantAmountTextbox.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.variantAmountTextbox.Location = new System.Drawing.Point(525, 538);
+            this.variantAmountTextbox.Name = "variantAmountTextbox";
+            this.variantAmountTextbox.Size = new System.Drawing.Size(279, 31);
+            this.variantAmountTextbox.TabIndex = 12;
+            this.variantAmountTextbox.Text = "variantAmountTextbox";
             // 
-            // textBox1
+            // listButton
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(703, 538);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 31);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "textBox1";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(905, 601);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 46);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.listButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listButton.Location = new System.Drawing.Point(916, 263);
+            this.listButton.Name = "listButton";
+            this.listButton.Size = new System.Drawing.Size(78, 46);
+            this.listButton.TabIndex = 13;
+            this.listButton.Text = "listButton";
+            this.listButton.UseVisualStyleBackColor = true;
+            this.listButton.Click += new System.EventHandler(this.listButton_Click);
             // 
             // VariantsSubScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.typeAmountTextButton);
-            this.Controls.Add(this.variantTypeTextButton);
-            this.Controls.Add(this.typeAmountTextbox);
+            this.Controls.Add(this.listButton);
+            this.Controls.Add(this.variantAmountTextbox);
+            this.Controls.Add(this.removeButton);
+            this.Controls.Add(this.returnButton);
+            this.Controls.Add(this.addButton);
             this.Controls.Add(this.variantTypeTextbox);
-            this.Controls.Add(this.nextButton);
-            this.Controls.Add(this.previousButton);
             this.Controls.Add(this.variantTitleLabel);
             this.Controls.Add(this.variantsListLabel);
             this.Name = "VariantsSubScreen";
@@ -175,14 +144,11 @@
 
         private System.Windows.Forms.Label variantsListLabel;
         private System.Windows.Forms.Label variantTitleLabel;
-        private System.Windows.Forms.Button previousButton;
-        private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.TextBox variantTypeTextbox;
-        private System.Windows.Forms.TextBox typeAmountTextbox;
-        private System.Windows.Forms.Button variantTypeTextButton;
-        private System.Windows.Forms.Button typeAmountTextButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Button returnButton;
+        private System.Windows.Forms.Button removeButton;
+        private System.Windows.Forms.TextBox variantAmountTextbox;
+        private System.Windows.Forms.Button listButton;
     }
 }

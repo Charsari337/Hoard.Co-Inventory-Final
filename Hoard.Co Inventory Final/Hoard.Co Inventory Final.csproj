@@ -78,6 +78,7 @@
     <Compile Include="VariantsSubScreen.Designer.cs">
       <DependentUpon>VariantsSubScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="VariantSubClass.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +96,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SpecficVariantScreen.resx">
       <DependentUpon>SpecficVariantScreen.cs</DependentUpon>
@@ -114,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\VariantType.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
